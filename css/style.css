@@ -92,9 +92,69 @@ ul {
     transition-duration: 0.4s;
 }
 
+section {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+.section-inner {
+    position: absolute;
+    bottom: 400px;
+    left: 150px;
+    max-width: 550px;
+}
+
+.section-inner h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
 
 /*bg img*/
 
-.section-about {
-    background-image: url()
+.section-intro {
+    background-image: url('../img/space1.jpg');
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    min-width: 120px;
+    padding: 15px 50px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.btn:hover span {
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    z-index: -1;
+}
+
+
+/*.btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    z-index: -1;
 }
