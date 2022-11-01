@@ -122,6 +122,18 @@ section {
     background-image: url('../img/space1.jpg');
 }
 
+.section-achievements {
+    background-image: url('../img/space1.jpg');
+}
+
+.section-gallery {
+    background-image: url('../img/space1.jpg');
+}
+
+.section-team {
+    background-image: url('../img/space1.jpg');
+}
+
 .btn {
     position: relative;
     display: inline-block;
