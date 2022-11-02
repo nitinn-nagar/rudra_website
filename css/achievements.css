@@ -35,7 +35,7 @@ body {
 }
 
 .slides-container {
-    height: calc(80vh - 2rem);
+    height: calc(100vh - 2rem);
     width: 100%;
     display: flex;
     overflow: scroll;
@@ -133,8 +133,11 @@ body {
     background-size: cover;
 }
 
-text {
+.text {
     text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
 }
 
 .image {
