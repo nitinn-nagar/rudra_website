@@ -392,34 +392,11 @@ footer ul li a:hover {
 }
 
 
-/*.btn {
+/*Inner pages*/
+
+.bg-team-image {
+    background-image: url(../img/roveredited.webp);
     position: relative;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    min-width: 120px;
-    padding: 15px 50px;
-    margin-top: 20px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    overflow: hidden;
-    z-index: 2;
-}
-
-/*.btn:hover .span {
-    color: #000
-}
-
-/*.btn .hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    color: #000;
-    z-index: -1;
-    transform: translateY(100%);
-    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
