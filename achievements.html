@@ -6,15 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,intial-scale=1.0" />
     <link rel="stylesheet" href="css/achievements.css" />
-    <script src="js/script.js" defer></script>
     <title>Achievements</title>
 </head>
 
 <body>
     <h1>Achievements</h1>
-    <section class="slider-wrapper">
 
-        <button class="slide-arrow" id="slide-arrow-prev">
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide"><img src="img/2013.jpg" alt="" width="100%">
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide8" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide"><img src="img/2014.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide"><img src="img/2015.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2016.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide5" class="carousel__next">Go to first slide</a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2017.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide6" class="carousel__next">Go to first slide</a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2018.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide7" class="carousel__next">Go to first slide</a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2019.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide8" class="carousel__next">Go to first slide</a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2020.jpg" alt="" width="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide7" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+            </li>
+        </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide6" class="carousel__navigation-button">Go to slide 6</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide7" class="carousel__navigation-button">Go to slide 7</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide8" class="carousel__navigation-button">Go to slide 8</a>
+                </li>
+            </ol>
+        </aside>
+    </section>
+
+
+
+
+    <!-- <div class="card">
+
+        <div class="card-content">
+            <h2 class="card-title">URC-2013</h2>
+            <p class="card-body">5th World Rank <br> 1st Asia Rank</p>
+        </div>
+    </div>
+    </div> -->
+    <!-- <section class="slider-wrapper">  -->
+
+    <!-- <button class="slide-arrow" id="slide-arrow-prev">
           &#8249;
         </button>
 
@@ -51,14 +136,15 @@
             <li class="slide"><img class="image" src="img/2019.393cee50.webp" alt="">
                 <div class="text">
                     <p>11th World Rank & 2nd Asia Rank</p>
-                </div>/li>
-                <li class="slide"><img class="image" src="img/2020-irc.5add9aba.webp" alt="">
-                    <div class="text">
-                        <p>3rd World Rank & 1st Asia Rank</p>
-                    </div>
-                </li>
+                </div>
+            </li>
+            <li class="slide"><img class="image" src="img/2020-irc.5add9aba.webp" alt="">
+                <div class="text">
+                    <p>3rd World Rank & 1st Asia Rank</p>
+                </div>
+            </li>
         </ul>
-    </section>
+    </section> -->
     <!-- <div class="carousel">
         <button class="carousel_button carousel_button--left">
             <img src="img/left.svg" alt="">
@@ -114,6 +200,22 @@
 
         </div>
     </div> -->
+    <script>
+        const slidesContainer = document.getElementById("slides-container");
+        const slide = document.querySelector(".slide");
+        const prevButton = document.getElementById("slide-arrow-prev");
+        const nextButton = document.getElementById("slide-arrow-next");
+
+
+        nextButton.addEventListener("click", (event) => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft += slideWidth;
+        });
+        prevButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft -= slideWidth;
+        });
+    </script>
 </body>
 
 </html>
