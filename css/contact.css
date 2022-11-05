@@ -323,7 +323,7 @@ html {
 
 .logo {
     margin-top: 50px;
-    width: 15%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,4 +390,15 @@ h1 {
 .card p {
     margin-top: 50px;
     line-height: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .contact-info {
+        flex-direction: row;
+    }
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
 }
