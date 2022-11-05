@@ -13,76 +13,85 @@
     <h1>Achievements</h1>
 
     <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
+        <ul class="carousel__viewport">
             <li id="carousel__slide1" tabindex="0" class="carousel__slide"><img src="img/2013.jpg" alt="" width="100%">
+                <h3>URC-2013</h3>
+                <h2>5th World Rank & 1st Asia Rank</h2>
                 <div class="carousel__snapper">
                     <a href="#carousel__slide8" class="carousel__prev">Go to last slide</a>
                     <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
                 </div>
             </li>
             <li id="carousel__slide2" tabindex="0" class="carousel__slide"><img src="img/2014.jpg" alt="" width="100%">
+                <h3>URC-2014</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
             </li>
             <li id="carousel__slide3" tabindex="0" class="carousel__slide"><img src="img/2015.jpg" alt="" width="100%">
+                <h3>URC-2015</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
             </li>
             <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2016.jpg" alt="" width="100%">
+                <h3>URC-2016</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide5" class="carousel__next">Go to first slide</a>
             </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2017.jpg" alt="" width="100%">
+            <li id="carousel__slide5" tabindex="0" class="carousel__slide"><img src="img/2017.jpg" alt="" width="100%">
+                <h3>URC-2017</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide6" class="carousel__next">Go to first slide</a>
             </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2018.jpg" alt="" width="100%">
+            <li id="carousel__slide6" tabindex="0" class="carousel__slide"><img src="img/2018.jpg" alt="" width="100%">
+                <h3>URC-2018</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide7" class="carousel__next">Go to first slide</a>
             </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2019.jpg" alt="" width="100%">
+            <li id="carousel__slide7" tabindex="0" class="carousel__slide"><img src="img/2019.jpg" alt="" width="100%">
+                <h3>URC-2019</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide6" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide8" class="carousel__next">Go to first slide</a>
             </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide"><img src="img/2020.jpg" alt="" width="100%">
+            <li id="carousel__slide8" tabindex="0" class="carousel__slide"><img src="img/2020.jpg" alt="" width="100%">
+                <h3>IRC-2020</h3>
                 <div class="carousel__snapper"></div>
                 <a href="#carousel__slide7" class="carousel__prev">Go to previous slide</a>
                 <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
             </li>
-        </ol>
+        </ul>
         <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
+            <ul class="carousel__navigation-list">
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    <a href="#carousel__slide1" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    <a href="#carousel__slide2" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    <a href="#carousel__slide3" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                    <a href="#carousel__slide4" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>
+                    <a href="#carousel__slide5" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide6" class="carousel__navigation-button">Go to slide 6</a>
+                    <a href="#carousel__slide6" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide7" class="carousel__navigation-button">Go to slide 7</a>
+                    <a href="#carousel__slide7" class="carousel__navigation-button"></a>
                 </li>
                 <li class="carousel__navigation-item">
-                    <a href="#carousel__slide8" class="carousel__navigation-button">Go to slide 8</a>
+                    <a href="#carousel__slide8" class="carousel__navigation-button"></a>
                 </li>
-            </ol>
+            </ul>
         </aside>
     </section>
 
@@ -200,22 +209,7 @@
 
         </div>
     </div> -->
-    <script>
-        const slidesContainer = document.getElementById("slides-container");
-        const slide = document.querySelector(".slide");
-        const prevButton = document.getElementById("slide-arrow-prev");
-        const nextButton = document.getElementById("slide-arrow-next");
 
-
-        nextButton.addEventListener("click", (event) => {
-            const slideWidth = slide.clientWidth;
-            slidesContainer.scrollLeft += slideWidth;
-        });
-        prevButton.addEventListener("click", () => {
-            const slideWidth = slide.clientWidth;
-            slidesContainer.scrollLeft -= slideWidth;
-        });
-    </script>
 </body>
 
 </html>
