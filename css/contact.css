@@ -322,7 +322,8 @@ html {
 }
 
 .logo {
-    width: 20%;
+    margin-top: 50px;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
