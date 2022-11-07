@@ -11,6 +11,10 @@ body {
     font-family: 'Familjen Grotesk', sans-serif;
     background: #000;
     color: #fff;
+    background-image: url('../img/2.png');
+    background-repeat: repeat-y repeat-x;
+    overflow-y: scroll;
+    background-size: contain;
 }
 
 a {
@@ -118,11 +122,13 @@ section {
 
 /*bg img*/
 
-.section-intro {
-    background-image: url('../img/space1.jpg');
-}
 
-.section-achievements {
+/* .bg {
+    background-image: url('../img/1.png');
+} */
+
+
+/* .section-achievements {
     background-image: url('../img/space1.jpg');
 }
 
@@ -132,7 +138,7 @@ section {
 
 .section-team {
     background-image: url('../img/space1.jpg');
-}
+} */
 
 .btn {
     position: relative;
@@ -178,6 +184,7 @@ section {
 footer {
     position: relative;
     padding: 55px 0;
+    background-color: #000;
 }
 
 footer ul {
