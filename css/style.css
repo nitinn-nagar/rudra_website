@@ -11,10 +11,10 @@ body {
     font-family: 'Familjen Grotesk', sans-serif;
     background: #000;
     color: #fff;
-    background-image: url('../img/2.png');
-    background-repeat: repeat-y repeat-x;
-    overflow-y: scroll;
-    background-size: contain;
+    /* background-image: url('../img/2.png'); */
+    /* background-repeat: repeat-y repeat-x; */
+    /* overflow-y: scroll;
+    background-size: contain; */
 }
 
 a {
@@ -122,23 +122,22 @@ section {
 
 /*bg img*/
 
+.bg {
+    background-image: url('../img/mars-glow.png');
+    background-size: cover;
+}
 
-/* .bg {
-    background-image: url('../img/1.png');
-} */
-
-
-/* .section-achievements {
-    background-image: url('../img/space1.jpg');
+.section-achievements {
+    background-image: url('../img/image\ 6.png');
 }
 
 .section-gallery {
-    background-image: url('../img/space1.jpg');
+    background-image: url('../img/image\ 6.png');
 }
 
 .section-team {
-    background-image: url('../img/space1.jpg');
-} */
+    background-image: url('../img/image\ 6.png');
+}
 
 .btn {
     position: relative;
@@ -421,6 +420,7 @@ footer ul li a:hover {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    z-index: 1;
 }
 
 @keyframes rover-animate {
