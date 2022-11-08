@@ -407,3 +407,29 @@ footer ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/* motion rover */
+
+.rover-animate {
+    scale: 150%;
+    position: fixed;
+    margin-left: 40%;
+    image-rendering: crisp-edges;
+    animation-name: rover-animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rover-animate {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
