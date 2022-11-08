@@ -412,12 +412,13 @@ footer ul li a:hover {
 /* motion rover */
 
 .rover-animate {
+    margin-top: 10%;
     scale: 150%;
     position: fixed;
     margin-left: 40%;
     image-rendering: crisp-edges;
     animation-name: rover-animate;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -427,7 +428,7 @@ footer ul li a:hover {
         transform: translate(0, 0px);
     }
     50% {
-        transform: translate(0, 5px);
+        transform: translate(0, 10px);
     }
     100% {
         transform: translate(0, -0px);
