@@ -125,10 +125,7 @@ section {
 .bg {
     background-image: url('../img/mars-glow.png');
     background-size: cover;
-}
-
-.section-achievements {
-    background-image: url('../img/image\ 6.png');
+    /* .section-achievements { */
 }
 
 .section-gallery {
@@ -412,9 +409,9 @@ footer ul li a:hover {
 
 .rover-animate {
     margin-top: 10%;
-    scale: 150%;
+    scale: 100%;
     position: fixed;
-    margin-left: 40%;
+    margin-left: 60%;
     image-rendering: crisp-edges;
     animation-name: rover-animate;
     animation-duration: 7s;
