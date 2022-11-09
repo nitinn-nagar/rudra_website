@@ -412,7 +412,6 @@ footer ul li a:hover {
     scale: 100%;
     position: fixed;
     margin-left: 60%;
-    image-rendering: crisp-edges;
     animation-name: rover-animate;
     animation-duration: 7s;
     animation-iteration-count: infinite;
