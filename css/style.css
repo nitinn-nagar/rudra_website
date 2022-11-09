@@ -409,7 +409,7 @@ footer ul li a:hover {
 
 .rover-animate {
     margin-top: 10%;
-    scale: 100%;
+    scale: 65%;
     position: fixed;
     margin-left: 60%;
     animation-name: rover-animate;
