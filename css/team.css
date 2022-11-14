@@ -329,7 +329,6 @@ footer ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #fff
 }
 
 .info-area {
@@ -389,7 +388,6 @@ footer ul li a:hover {
     margin: 0 6px;
     text-align: center;
     border-radius: 50%;
-    background-color: #262626;
 }
 
 .team-slider .owl-dot.active {
@@ -402,7 +400,7 @@ footer ul li a:hover {
     animation: move-animation 2s ease-in-out infinite;
 }
 
-@-webkit-keyframes move-animation {
+@keyframes move-animation {
     0% {
         top: 3px;
     }
