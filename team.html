@@ -9,9 +9,50 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <link rel="stylesheet" href="css/achievements.css" />
+    <script src="js/script.js" defer></script>
+    <title>Team Rudra</title>
 </head>
 
 <body>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li class="mobile-only"><a href="achievements.html">Achievements</a></li>
+            <li class="mobile-only"><a href="gallery.html">Gallery</a></li>
+            <li class="mobile-only"><a href="team.html">Team</a></li>
+            <li class="mobile-only"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Team Rudra" />
+            </a>
+        </div>
+        <nav class="desktop-main-menu">
+            <ul>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hamburger -->
+    <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+
+    <canvas id="space"></canvas>
+    <a href="#" id="warp"></a>
     <section id="team">
         <div class="container">
             <div class="row">
@@ -35,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="single-box text-center">
-                                <div class="img-area"><img alt="" class="img-fluid move-animation" src="#"></div>
+                                <div class="img-area"><img alt="" class="img-fluid move-animation" src="../img/reshesh.jpg"></div>
                                 <div class="info-area">
                                     <h4>Oishwarjya Bannerjee</h4>
                                     <p>Team Manager</p><a href="#">Contact</a>
@@ -101,6 +142,17 @@
             }
         });
     </script>
+    <footer>
+        <ul>
+            <li>RUDRA &copy; 2022</li>
+            <li><a href="https://instagram.com/team_rudra">Instagram</a></li>
+            <li><a href="https://twitter.com/srmrudra">Twitter</a></li>
+            <li><a href="https://wa.me/917781996283">Whatsapp</a></li>
+            <li><a href="https://www.facebook.com/srmteamrudra/">Facebook</a></li>
+            <li><a href="https://www.youtube.com/c/RUDRASRMMARSROVER">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/company/srmrudra/mycompany/">LinkedIn</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
