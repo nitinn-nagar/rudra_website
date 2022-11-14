@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,intial-scale=1.0" />
@@ -57,7 +58,7 @@
                     </div>
                     <div class="information">
 
-                        <p>+91 77819 96283 <br> +91 9521887134</p>
+                        <p><br>Team Lead <br> +91 77819 96283 <br><br>Team Manager <br> +91 95218 87134</p>
                     </div>
                 </div>
 
@@ -82,33 +83,34 @@
             </div>
 
             <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
+                <form id="contact-form" method="post" action="contact.php">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
 
-                <form class="form-horizontal" method="post" action="contact.php">
-                    <h3 class="title">Contact us</h3>
-                    <div class="input-container">
-                        <input type="text" name="name" class="input" />
-                        <label for="">Name</label>
-                        <span>Name</span>
-                    </div>
-                    <div class="input-container">
-                        <input type="email" name="email" class="input" />
-                        <label for="">Email</label>
-                        <span>Email</span>
-                    </div>
-                    <div class="input-container">
-                        <input type="tel" name="phone" class="input" />
-                        <label for="">Phone</label>
-                        <span>Phone</span>
-                    </div>
-                    <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Message</label>
-                        <span>Message</span>
-                    </div>
-                    <input type="submit" value="Send" class="btn" />
-                </form>
+                    <form class="form-horizontal" method="post" action="contact.php">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" />
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" />
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" />
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
             </div>
         </div>
     </div>

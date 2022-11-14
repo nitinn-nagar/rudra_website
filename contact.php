@@ -1,25 +1,19 @@
-<?php
-// Get data from form
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
+<?php 
+$name = $_Post['name'];
+$visitor_email=$_Post['email'];
+$phone=$_Post['phone'];
+$message=$_Post['message'];
 
-$to = "srmmarsroverteam@gmail.com";
-$subject = "Website Email";
+$email_from ='nnagar141@gmail.com';
+$email_subject = "Query from Website";
 
-// The following text will be sent
-// Name = user entered name
-// Email = user entered email
-// Message = user entered message
-$txt ="Name = ". $name . "\r\n Email = "
-	. $email . "\r\n Message =" . $message;
+$email_body="Name $name.\n".
+				"Email: $visitor_email.\n". 
+					"Phone: $phone.\n". 
+						"Message: $message.\n";
 
-$headers = "From: noreply@demosite.com" . "\r\n" .
-			"CC: somebodyelse@example.com";
-if($email != NULL) {
-	mail($to, $subject, $txt, $headers);
-}
-
-// Redirect to
-header("Location:last.html");
-?>
+$to ="srmmarsroverteam@gmail.com";
+$headers ="From: $email_from \r\n";
+$headers .= "Reply-To: $visitor_email \r\n";
+mail($to,$email_subject,$email_body,$headers);
+header("Location: contact.html");
