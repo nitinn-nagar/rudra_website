@@ -122,19 +122,30 @@ section {
 
 /*bg img*/
 
-.bg {
-    background-image: url('../img/mars-glow.png');
+
+/* .bg {
+    background-image: url('../img/image\ 6\ \(1\).png');
     background-size: cover;
-    /* .section-achievements { */
+} */
+
+
+/* .section-achievements {
+    background-image: url('../img/mars\ glow\ 1.png');
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .section-gallery {
-    background-image: url('../img/image\ 6.png');
+    background-image: url('../img/mars\ glow\ 1.png');
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .section-team {
-    background-image: url('../img/image\ 6.png');
-}
+    background-image: url('../img/mars\ glow\ 1.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+} */
 
 .btn {
     position: relative;
@@ -429,4 +440,22 @@ footer ul li a:hover {
     100% {
         transform: translate(0, -0px);
     }
+}
+
+
+/* bg animation */
+
+.w {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: scroll;
+    background-size: cover;
+    image-rendering: pixelated;
+    font-family: sans-serif;
+}
+
+#space {
+    width: 100%
 }
