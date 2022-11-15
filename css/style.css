@@ -367,11 +367,11 @@ footer ul li a:hover {
     }
     footer ul li:first-child {
         position: absolute;
-        top: 30px;
-        left: 50%;
+        align-items: center;
         transform: translate(-50%, -50%);
     }
     footer ul li {
+        font-size: 5px;
         margin-right: 15px;
     }
     .logo {
@@ -446,9 +446,9 @@ section {
 
 .section-in {
     position: absolute;
-    bottom: 200px;
-    left: 150px;
-    max-width: 560px;
+    bottom: 200vh;
+    left: 160vh;
+    max-width: 560vh;
     z-index: 10;
     /* animation-name: rover-animate;
     animation-duration: 5s;
