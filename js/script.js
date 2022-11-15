@@ -113,6 +113,9 @@ function drawStars() {
         //c.fill();
     }
 }
+var canvas = document.getElementById('space');
+var heightRatio = 1.5;
+canvas.height = canvas.width * heightRatio;
 
 document.getElementById('warp').addEventListener("click", function(e) {
     window.warp = window.warp == 1 ? 0 : 1;
