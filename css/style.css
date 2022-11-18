@@ -97,7 +97,6 @@ section {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    text-transform: uppercase;
 }
 
 .section-inner {
@@ -441,7 +440,6 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-transform: uppercase;
 }
 
 .section-in {
@@ -578,4 +576,44 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.rathinam {
+    border-radius: 10px;
+    border: white;
+    display: grid;
+    position: absolute;
+    left: 55%;
+    width: 20%;
+    top: 20%;
+}
+
+.srm--logo {
+    display: grid;
+    position: absolute;
+    left: 25%;
+    width: 20%;
+    top: 35%;
+}
+
+.admin h2 {
+    font-family: Cambria, Georgia, serif;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.admin h1 {
+    position: relative;
+    top: 62%;
+    left: 60%;
+    font-size: x-large;
+}
+
+.admin h3 {
+    position: relative;
+    top: 62%;
+    left: 61.5%;
+    font-size: medium;
 }
